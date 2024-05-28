@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAllPlayers, createPlayer, deletePlayer, deleteAllPlayers } from '../api';
 import '../App.css';
+import puppyBackground from '../../images/puppyBackground.jpg'
 
 const AllPlayers = () => {
   const [players, setPlayers] = useState([]);
@@ -41,7 +42,7 @@ const AllPlayers = () => {
     <div>
       <header>
         <h1>Puppy Bowl</h1>
-        <img src="../../images/puppyBackground.jpg" alt="Puppy Bowl Logo" />
+      <img src= {puppyBackground} alt="Puppy Bowl Logo" />
       </header>
 
       <div className="form-container">
